@@ -1,0 +1,8 @@
+export default {
+  ADMITTED: 'ADMITTED',
+  PRE_OP: 'PRE_OP',
+  IN_OR: 'IN_OR',
+  PACU: 'PACU',
+  ABLE_TO_VISIT: 'ABLE_TO_VISIT',
+  DISCHARGED: 'DISCHARGED',
+};

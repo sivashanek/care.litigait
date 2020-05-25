@@ -1,0 +1,41 @@
+.VerticalLabelColumn {
+  margin-left: 1em;
+}
+
+.PushedVerticalLabelColumn div,
+.VerticalLabelColumn div {
+  display: flex;
+  height: 5.75rem;
+}
+
+.VerticalLabelColumn,
+.PushedVerticalLabelColumn {
+  width: 100%;
+}
+
+.PushedVerticalLabelColumn div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.VerticalLabelColumn div.CurrentLabelInVerticalColumn {
+  height: 5.75rem;
+  font-size: 1.5em;
+}
+
+.InactiveLabel {
+  opacity: 0.45;
+}
+
+@media (max-width: 460px) {
+  .VerticalLabelColumn div.CurrentLabelInVerticalColumn {
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 410px) {
+  .VerticalLabelColumn div.CurrentLabelInVerticalColumn {
+    font-size: 1em;
+  }
+}

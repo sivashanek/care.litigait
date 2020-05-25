@@ -1,0 +1,25 @@
+version: 0.2
+
+env:
+  variables:
+    "NODE_OPTIONS": "--max-old-space-size=4096"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 8
+  pre_build:
+    commands:
+      - yarn --no-progress --non-interactive --check-files
+      - rm -rf build
+      - yarn install
+  build:
+    commands:
+      - export REACT_APP_VERSION=$CODEBUILD_RESOLVED_SOURCE_VERSION
+      - yarn --no-progress --non-interactive build
+  post_build:
+    commands:
+      - aws s3 sync ./build $S3_BUCKET
+      - aws cloudfront create-invalidation --paths "/*" --distribution-id $(aws cloudfront list-distributions --query "(DistributionList.Items[?Aliases.Items[?@=='$VIRTUAL_HOST']].Id)[0]" | tr -d '"')
+    artifacts:
+      files:
+        - './build/*'

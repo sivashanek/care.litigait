@@ -1,0 +1,11 @@
+.TextBox {
+  background: none;
+  border: 1px solid #172351;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  font-family: Rubik, -apple-system, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  padding: 1em;
+  box-sizing: border-box;
+  font-size: 1.4em;
+}

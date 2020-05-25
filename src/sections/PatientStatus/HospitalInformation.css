@@ -1,0 +1,47 @@
+.HospitalInformation {
+  width: 100%;
+  padding: 2em 1.5em;
+  text-align: center;
+  color: #fff;
+  background-color: #1a1e4c;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.HospitalInformationTitle {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+
+.HospitalInformationActionBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.HospitalInformationButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.HospitalInformationIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+
+  box-sizing: border-box;
+  width: 3em;
+  height: 3em;
+  border: 1px solid white;
+  border-radius: 3em;
+  box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
+}

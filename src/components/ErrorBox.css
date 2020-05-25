@@ -1,0 +1,18 @@
+.ErrorBox {
+  font-size: 1.2em;
+  background: #FF8B00;
+  border-radius: 4px;
+  padding: 0.75em;
+  color: #4e2b00;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  top: 1em;
+  z-index: 20;
+
+  left: 0;
+  right: 0;
+}

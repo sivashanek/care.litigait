@@ -1,0 +1,12 @@
+.VerticalProgressBar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.VerticalProgressBar li {
+  list-style: none;
+  line-height: 1px;
+}
+

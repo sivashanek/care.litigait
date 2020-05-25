@@ -1,0 +1,28 @@
+.RatingButtonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 18.125rem;
+}
+
+.RatingButton {
+  display: flex;
+  background: none;
+  border: 0;
+  color: #00a7f7;
+  transition: 160ms all;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 .25rem;
+  outline: none;
+}
+
+.RatingButton .material-icons {
+  transition: 160ms all cubic-bezier(.23,1,.32,1);
+  font-size: 4em;
+}
+
+.RatingButton:hover .material-icons {
+  font-size: 5em;
+  color: orange;
+}

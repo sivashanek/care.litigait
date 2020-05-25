@@ -1,0 +1,31 @@
+.Node {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display:inline-block;
+  transition: all 1000ms ease;
+  background-color: transparent;
+  border: 2px solid #003569;
+}
+
+.ActiveNode {
+  background-color: rgb(0, 167, 247);
+  border: 2px solid rgb(0, 167, 247);
+}
+
+.CurrentNode {
+  height: 2em;
+  width: 2em;
+}
+
+.Divider {
+  height: 64px;
+  width: 2px;
+  margin: 0 auto;
+  transition: all 800ms ease;
+  background-color: #003569;
+}
+
+.ActiveDivider {
+  background-color: rgb(0, 167, 247);
+}

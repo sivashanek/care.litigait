@@ -1,0 +1,40 @@
+.Page {
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: calc(100% - 3rem);
+  display: flex;
+}
+
+.Disclaimer {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  max-width: 620px;
+}
+
+@media (max-width: 768px) {
+  .Disclaimer {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 1.5em;
+    justify-content: initial;
+  }
+
+  .Disclaimer > * {
+    flex: 0 0 auto;
+  }
+}
+
+.Page .PageIcon {
+  height: 200px;
+}
+
+.PageColumn {
+  flex-direction: column;
+}
+
+.PageCenter {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}

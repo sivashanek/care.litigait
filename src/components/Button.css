@@ -1,0 +1,23 @@
+.Button {
+  background: #00a7f7;
+  border: 1px solid #00a7f7;
+  border-radius: 4px;
+  font-family: Rubik, -apple-system, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  width: 100%;
+  font-size: 1.8em;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  cursor: pointer;
+  transition: 160ms all;
+}
+
+.Button:hover {
+  background: #003569;
+  border: 1px solid #003569;
+}
+
+.Button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
